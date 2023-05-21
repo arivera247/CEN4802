@@ -10,16 +10,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
-        System.out.println("The number " + n + " term in the Fibonacci sequence is " + Fibonacci.sequence(n) + ".");
+        System.out.println("The number " + n + " term in the Fibonacci sequence is " + sequence(n) + ".");
     }
-}
 
-class Fibonacci {
+
+    //Reference: https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
     static int sequence(int n) {
         if (n <= 1)
             return n;
         return sequence(n - 1) + sequence(n - 2);
     }
 }
-
-//Reference: https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
