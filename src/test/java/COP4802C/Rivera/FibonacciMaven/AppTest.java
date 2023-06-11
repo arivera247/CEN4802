@@ -19,6 +19,8 @@ public class AppTest {
         assertEquals(13, App.sequence(7));
         assertEquals(21, App.sequence(8));
         assertEquals(1836311903, App.sequence(46));
-        assertEquals(2971215073L, App.sequence(47)); //Long data type required to exceed integer range, value known to create issue - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+        assertEquals(2971215073L, App.sequence(47));
+        //Long data type required to exceed integer range, value known to create issue
+        //Reference: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
     }
 }
