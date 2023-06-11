@@ -41,7 +41,7 @@ public class App {
      * @param n the sequence number to determine the final value of the Fibonacci sequence.
      * @return the calculated nth term of the Fibonacci sequence.
      */
-    static int sequence(int n) {
+    static long sequence(int n) {
         if (n <= 1)
             return n;
         return sequence(n - 1) + sequence(n - 2);
